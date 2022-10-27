@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miniproject_recipe_app/screen/detail_profile.dart';
+import 'package:miniproject_recipe_app/screen/login_page.dart';
 import 'package:miniproject_recipe_app/screen/tentang.dart';
 
 import '../const/theme.dart';
@@ -135,8 +136,9 @@ class ProfilePage extends StatelessWidget {
                         ),
                       ]),
                     ),
-                    onTap: () => Navigator.of(context).push,
-                  ),
+                    onTap: () => Navigator.pop(context,
+                        MaterialPageRoute(builder: (context) => LoginPage())),
+                  )
                 ],
               ),
             ],
